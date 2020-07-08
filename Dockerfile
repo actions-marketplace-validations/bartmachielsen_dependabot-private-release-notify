@@ -10,4 +10,4 @@ WORKDIR /app
 
 ADD . /app
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoint.sh"]
