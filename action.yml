@@ -1,0 +1,9 @@
+name: 'Dependabot Private Release Notify'
+description: 'Notify Dependabot of a new Python package release'
+inputs:
+  github_token:
+    description: 'Github token to use for the dependabot connection, use: ${{secrets.GITHUB_TOKEN}}'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
