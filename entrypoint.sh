@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Sending dependabot notification"
 cd /github/workspace || exit
-cat setup.py
+echo $(ls)
 curl \
   -d '{"name":"'$(python setup.py --name)'", "version":"'$(python setup.py --version)'", "package-manager":"pip"}' \
   -H "Content-Type: application/json" \
